@@ -25,7 +25,22 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
- 
+  <style>
+    /* Remove outline and box-shadow for all input elements */
+    input.form-control:focus, 
+    textarea.form-control:focus, 
+    select.form-control:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+  input::placeholder,select::placeholder,textarea::placeholder {
+  color: gray;  
+  font-size: 14px;
+  opacity: 0.7;
+}
+    
+</style>
+
 </head>
 
 <body class="index-page">
@@ -76,11 +91,11 @@
         <div class="row">
           <!-- Left Column: Text Content -->
           <div class="col-xl-8">
-            <h1 data-aos="fade-up">
-              Laptop Repair in Dehradun </br>Get Your Laptop Fixed by Experts
+            <h1 class="lh-base" data-aos="fade-up">
+              Laptop Repair in Dehradun</br>Get Your Laptop Fixed by Experts
             </h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>We provide professional laptop repair in Dehradun, Whether it's a hardware issue, software problem, virus attack, 
+              <p>We provide professional HP, Dell, Acer, Lenovo, Asus laptop repair in Dehradun, Whether it's a hardware issue, software problem, virus attack, 
                 or slow performance, our skilled technicians can handle it all.</p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -90,27 +105,30 @@
           <!-- Right Column: Inquiry Form -->
           <div class="col-xl-4 shadow">
             <div class="inquiry-form bg-white p-4 rounded" data-aos="fade-up" data-aos-delay="300">
-              <h6 class="text-primary">Laptop Inquiry</h2>
-              <form action="submit-form.php" method="post">
+              <h6 style="color:#56B8E6; padding:8px 0; text-align:center; font-size:20px;"><strong>Laptop Inquiry</strong></h2>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2098249b-4b3b-4ca2-99bf-a341e04c7b6b">
+                <input type="hidden" name="Enqiry From" value="NK Laptop Service Center">
                 <div class="mb-3">
                   <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone" required>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone" required>
                 </div>
                 <div class="mb-3">
                   <select class="form-control" id="service" name="service" required>
                     <option value="">Select Service</option>
-                    <option value="hardware-repair">Hardware Repair</option>
+                    <option value="Laptop-repair">Laptop Repair</option>
                     <option value="software-troubleshooting">Software Troubleshooting</option>
                     <option value="virus-removal">Virus Removal</option>
                     <option value="performance-optimization">Performance Optimization</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <textarea class="form-control" id="message" name="message"  placeholder="Your Issue" required></textarea>
+                  <textarea class="form-control" id="message" name="message"  placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thanks.html">
+                <button type="submit" class="btn btn-primary btn-sm w-100">Submit</button>
               </form>
             </div>
           </div>
@@ -126,22 +144,29 @@
           <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about.jpg" alt="">
           </div>
-          <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper init-swiper">              
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item">
+          <div class="col-xl-7 slides position-relative p-5" data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="swiper init-swiper" style="border:3px solid yellow">              
+              <div class="swiper-wrapper" style="border:1px solid blue">
+                <div class="swiper-slide" style="border:1px solid red">
+                  <div class="item" style="border:1px solid green">
                     <h3 class="mb-3">Computer Repair Service in Dehradun</h3>
-                    <h4 class="mb-3">HP, Dell, Acer Lenovo Asus Laptop repair and service in Dehradun.</h4>
-                    <p>We provide expert computer and laptop repair in Dehradun, ensuring fast and 
+                    <h4 class="mb-3">HP, Dell, Acer, Lenovo, Asus Laptop repair and service in Dehradun.</h4>
+                    <p class="lh-lg">We provide expert computer and laptop repair in Dehradun, ensuring fast and 
                       reliable solutions for hardware and software issues. 
-                      Our home service in Dehradun allows you to get your device fixed at your convenience. 
+                      Our home computer & laptop service in Dehradun allows you to get your device fixed at your convenience. 
                       From virus removal to performance optimization, 
                       our skilled technicians offer professional and affordable repair services..</p>
                   </div>
                 </div>
              </div>          
-            </div>
+            </div> -->
+            <h3 class="mb-3">Computer Repair Service in Dehradun</h3>
+            <h4 class="lh-lg">HP, Dell, Acer, Lenovo, Asus Laptop repair and service in Dehradun and near by areas.</h4>
+            <p class="lh-lg">We provide expert computer and laptop repair in Dehradun, ensuring fast and 
+              reliable solutions for hardware and software issues. 
+              Our home computer & laptop service in Dehradun allows you to get your device fixed at your convenience. 
+              From virus removal to performance optimization, 
+              our skilled technicians offer professional and affordable repair services..</p>
           </div>     
         </div> 
     </div> 

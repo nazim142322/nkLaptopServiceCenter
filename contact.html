@@ -44,18 +44,17 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
+        <h1 class="sitename">NK Laptop Service Center</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home<br></a></li>
+          <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="portfolio.html">Gallery</a></li>
+          <!-- <li><a href="team.html">Team</a></li> -->
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -71,12 +70,11 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          </li> -->
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -130,7 +128,9 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <input type="hidden" name="access_key" value="2098249b-4b3b-4ca2-99bf-a341e04c7b6b">
+              <input type="hidden" name="Contact us" value="Contact Form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -149,11 +149,8 @@
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                <div class="col-md-12 text-center"> 
+                  <!-- <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thanks.html">                -->
                   <button type="submit">Send Message</button>
                 </div>
 
