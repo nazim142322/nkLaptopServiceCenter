@@ -21,41 +21,31 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> 
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Nova
-  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+ 
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
+        <h1 class="sitename">NK Laptop Service Center</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="portfolio.html">Gallery</a></li>
+          <!-- <li><a href="team.html">Team</a></li> -->
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -71,120 +61,91 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
-
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
       <div class="container">
         <div class="row">
-          <div class="col-xl-4">
-            <h1 data-aos="fade-up">Focus On What Matters</h1>
+          <!-- Left Column: Text Content -->
+          <div class="col-xl-8">
+            <h1 data-aos="fade-up">
+              Laptop Repair in Dehradun </br>Get Your Laptop Fixed by Experts
+            </h1>
             <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+              <p>We provide professional laptop repair in Dehradun, Whether it's a hardware issue, software problem, virus attack, 
+                or slow performance, our skilled technicians can handle it all.</p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href="#about" class="btn-get-started">Know More..</a>
+            </div>
+          </div>          
+          <!-- Right Column: Inquiry Form -->
+          <div class="col-xl-4 shadow">
+            <div class="inquiry-form bg-white p-4 rounded" data-aos="fade-up" data-aos-delay="300">
+              <h6 class="text-primary">Laptop Inquiry</h2>
+              <form action="submit-form.php" method="post">
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone" required>
+                </div>
+                <div class="mb-3">
+                  <select class="form-control" id="service" name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="hardware-repair">Hardware Repair</option>
+                    <option value="software-troubleshooting">Software Troubleshooting</option>
+                    <option value="virus-removal">Virus Removal</option>
+                    <option value="performance-optimization">Performance Optimization</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" id="message" name="message"  placeholder="Your Issue" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
-
-      <div class="container">
-
+     <div class="container">
         <div class="row g-0">
-
           <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/why-us-bg.jpg" alt="">
+            <img src="assets/img/about.jpg" alt="">
           </div>
-
           <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "centeredSlides": true,
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "navigation": {
-                    "nextEl": ".swiper-button-next",
-                    "prevEl": ".swiper-button-prev"
-                  }
-                }
-              </script>
+            <div class="swiper init-swiper">              
               <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
                   <div class="item">
-                    <h3 class="mb-3">Let's grow your business together</h3>
-                    <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam perferendis asperiores explicabo vel tempore velit totam, natus nesciunt accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas sapiente optio.</p>
+                    <h3 class="mb-3">Computer Repair Service in Dehradun</h3>
+                    <h4 class="mb-3">HP, Dell, Acer Lenovo Asus Laptop repair and service in Dehradun.</h4>
+                    <p>We provide expert computer and laptop repair in Dehradun, ensuring fast and 
+                      reliable solutions for hardware and software issues. 
+                      Our home service in Dehradun allows you to get your device fixed at your convenience. 
+                      From virus removal to performance optimization, 
+                      our skilled technicians offer professional and affordable repair services..</p>
                   </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                    <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam quis.</h4>
-                    <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Aliquid non alias minus</h3>
-                    <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.</h4>
-                    <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim dolorum fugiat aut.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                    <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum soluta nihil est. Eum similique neque autem ut.</h4>
-                    <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui animi animi rerum.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-              </div>
-              <div class="swiper-pagination"></div>
+                </div>
+             </div>          
             </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Why Us Section -->
+          </div>     
+        </div> 
+    </div> 
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -192,17 +153,17 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Reliable, affordable, and expert computer and laptop repair in Dehradun with home service options for your convenience.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+            <div class="icon flex-shrink-0"><i  class="bi bi-pc-display" style="color: #f57813;"></i></div>
+           
             <div>
-              <h4 class="title">Lorem Ipsum</h4>
+              <h4 class="title">Desktop Service</h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -210,9 +171,9 @@
           <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-laptop style="color: #15a04a;"></i></div>
             <div>
-              <h4 class="title">Dolor Sitema</h4>
+              <h4 class="title">Laptop Service</h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -221,25 +182,25 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
             <div>
-              <h4 class="title">Sed ut perspiciatis</h4>
+              <h4 class="title">Software Installation</h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-windows" style="color: #15bfbc;"></i></div>
             <div>
-              <h4 class="title">Magni Dolores</h4>
+              <h4 class="title">Windows Installation</h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-motherboard" style="color: #f5cf13;"></i></div>
             <div>
-              <h4 class="title">Nemo Enim</h4>
+              <h4 class="title">Motherboard Repair</h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -248,7 +209,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
             <div>
-              <h4 class="title">Eiusmod Tempor</h4>
+              <h4 class="title">Hardware Upgradation</h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
               <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -261,10 +222,8 @@
     </section><!-- /Services Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
       <img src="assets/img/cta-bg.jpg" alt="">
-
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
@@ -276,122 +235,121 @@
           </div>
         </div>
       </div>
-
-    </section><!-- /Call To Action Section -->
+    </section> -->
+    <!-- /Call To Action Section -->
 
     <!-- Features Section -->
     <section id="features" class="features section">
-
       <div class="container">
         <div class="row">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="mb-0">Powerful Features for</h3>
-            <h3>Your Business</h3>
-
+            <h3 class="mb-0">Why choose</h3>
+            <h3>Our Service</h3>    
             <div class="row gy-4">
-
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-eye" style="color: #ff8b2c;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-tools" style="color: #ff8b2c;"></i>
+                  <span>Expert Technicians</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-infinity" style="color: #5578ff;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
+                  <i class="bi bi-house-door" style="color: #5578ff;"></i>
+                  <span>Home Service in Dehradun</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-mortarboard" style="color: #e80368;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
+                  <i class="bi bi-lightning" style="color: #e80368;"></i>
+                  <span>Quick & Reliable Solutions</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-star" style="color: #ffa76e;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-cash-stack" style="color: #ffa76e;"></i>
+                  <span>Affordable Pricing</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-shield-check" style="color: #11dbcf;"></i>
+                  <span>Trusted & Secure Service</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-camera-video" style="color: #4233ff;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
+                  <i class="bi bi-clock-history" style="color: #4233ff;"></i>
+                  <span>Same-Day Repairs</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-brightness-high" style="color: #29cc61;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
+                  <i class="bi bi-laptop" style="color: #29cc61;"></i>
+                  <span>Comprehensive Laptop & Computer Repair</span>
                 </div>
-              </div><!-- End Icon List Item-->
-
+              </div>
+              <!-- End Icon List Item-->    
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="bi bi-activity" style="color: #ff5828;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-people" style="color: #ff5828;"></i>
+                  <span>Customer Satisfaction Guaranteed</span>
                 </div>
-              </div><!-- End Icon List Item-->
-            </div>
-          </div>
-          <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
-            <div class="phone-wrap">
-              <img src="assets/img/iphone.png" alt="Image" class="img-fluid">
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-phone" style="color: #17a2b8;"></i>
+                  <span>24/7 Customer Support</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->              
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-patch-check" style="color: #f39c12;"></i>
+                  <span>Warranty on Repairs</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->              
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-gear" style="color: #9b59b6;"></i>
+                  <span>Genuine Spare Parts</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->
             </div>
           </div>
         </div>
-
-      </div>
-
-      <div class="details">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-              <a href="#about" class="btn-get-started">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Features Section -->
+      </div> 
+    </section>    
+    <!-- /Features Section -->
 
     <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Recent Blog Posts</h2>
-
       </div><!-- End Section Title -->
-
       <div class="container">
-
         <div class="row gy-5">
-
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
               <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
+                <span class="post-author"> /Admin</span>
               </div>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+              <h3 class="post-title">Laptop repair in Dehradun</h3>
+              <p>Laptop Repair in Dehradun – Get expert solutions for all your laptop issues, 
+                from hardware fixes to software troubleshooting. 
+                Our skilled technicians provide fast, reliable, and affordable laptop repair services, 
+                including home service in Dehradun...</p>
               <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -450,9 +408,10 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Nova</span>
+              <span class="sitename">NK Laptop Service Center</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>"NK Laptop Service Center – Your trusted destination for expert laptop and computer repairs in Dehradun. We offer fast, reliable, and affordable solutions, 
+              including home service. Customer satisfaction is our priority!".</p>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>

@@ -1,15 +1,5 @@
-/**
-* Template Name: Nova
-* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -162,7 +152,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -441,7 +431,7 @@ h6 {
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
@@ -735,7 +725,7 @@ section,
     position: absolute;
     content: "";
     width: 44%;
-    background-image: linear-gradient(180deg, color-mix(in srgb, var(--background-color), transparent 15%), color-mix(in srgb, var(--background-color), transparent 15%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
+    /* background-image: linear-gradient(180deg, color-mix(in srgb, var(--background-color), transparent 15%), color-mix(in srgb, var(--background-color), transparent 15%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%); */
     top: 0;
     bottom: 0;
     z-index: 2;
@@ -768,15 +758,17 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .hero blockquote {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
   padding-left: 20px;
   border-left: 2px solid var(--accent-color);
   margin: 40px 0;
+  font-size:22px;
+  font-weight: 300;
 }
 
 .hero .btn-get-started {
