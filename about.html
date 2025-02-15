@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,14 +26,37 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Nova
-  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .features {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+    h3 {
+      font-size: 2rem;
+      color: #333;
+      /* text-align: center; */
+      margin-bottom: 40px;
+    }
+    h4 {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #666;
+    }
+    ul li i {
+      margin-right: 10px;
+      color: #007bff;
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 
 <body class="about-page">
@@ -44,18 +67,17 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
+        <h1 class="sitename">NK Laptop Service Center</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home<br></a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="portfolio.html">Gallery</a></li>
+          <!-- <li><a href="team.html">Team</a></li> -->
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -71,12 +93,49 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+    </div>
+  </header><header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NK Laptop Service Center</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Gallery</a></li>
+          <!-- <li><a href="team.html">Team</a></li> -->
+          <li><a href="blog.html">Blog</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
@@ -101,21 +160,26 @@
       <div class="container">
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5">
+          <div class="col-lg-6">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>NK Laptop Service Center</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                At NK Laptop Service Center, we are dedicated to providing top-notch laptop and computer repair services in Dehradun. With years of experience, our team of expert technicians ensures quick and reliable solutions for all hardware and software issues. Whether it’s a broken screen, motherboard failure, virus attack, or slow performance, we have the skills and tools to fix it efficiently.
               </p>
-              <ul>
+              <p>
+                We take pride in offering home service in Dehradun, making repairs convenient for our customers. Our commitment to quality, affordability, and customer satisfaction has made us a trusted name in the industry.
+              </p>
+              <p>
+                At NK Laptop Service Center, we believe in delivering excellence with every repair. Trust us to keep your devices running smoothly!
+              </p>
+              <!-- <ul>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -123,211 +187,141 @@
       </div>
 
     </section><!-- /About Section -->
-
+    <!--Solutions-->
+    <section class="features section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3>Expert Solutions for Laptop Issues</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4><i class="fas fa-tools"></i> Common Hardware Issues</h4>
+            <ul>
+              <li><i class="fas fa-battery-quarter"></i><strong> Battery Not Charging:</strong> We diagnose and replace faulty batteries or charging ports.</li>
+              <li><i class="fas fa-thermometer-full"></i><strong> Overheating:</strong> Cleaning internal fans and replacing thermal paste to prevent overheating.</li>
+              <li><i class="fas fa-desktop"></i><strong> Broken Screen:</strong> Screen replacement for cracked or malfunctioning displays.</li>
+              <li><i class="fas fa-keyboard"></i><strong> Keyboard Malfunctions:</strong> Repair or replace damaged or unresponsive keyboards.</li>
+              <li><i class="fas fa-hdd"></i><strong> Hard Drive Failure:</strong> Data recovery and replacement of failed hard drives.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4><i class="fas fa-code"></i> Common Software Issues</h4>
+            <ul>
+              <li><i class="fas fa-tachometer-alt"></i><strong> Slow Performance:</strong> Optimize and clean up your system for faster operation.</li>
+              <li><i class="fas fa-shield-virus"></i><strong> Virus and Malware Removal:</strong> Detect and remove harmful software to secure your laptop.</li>
+              <li><i class="fas fa-bug"></i><strong> Operating System Issues:</strong> Fix crashes, errors, and update problems with your OS.</li>
+              <li><i class="fas fa-cogs"></i><strong> Driver Problems:</strong> Update or reinstall drivers to resolve hardware compatibility issues.</li>
+              <li><i class="fas fa-file-export"></i><strong> Data Backup and Recovery:</strong> Safeguard your data and recover lost files.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
-
+    <section id="features" class="features section">
       <div class="container">
-
-        <div class="row g-0">
-
-          <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/why-us-bg.jpg" alt="">
-          </div>
-
-          <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "centeredSlides": true,
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "navigation": {
-                    "nextEl": ".swiper-button-next",
-                    "prevEl": ".swiper-button-prev"
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Let's grow your business together</h3>
-                    <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam perferendis asperiores explicabo vel tempore velit totam, natus nesciunt accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas sapiente optio.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                    <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam quis.</h4>
-                    <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Aliquid non alias minus</h3>
-                    <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.</h4>
-                    <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim dolorum fugiat aut.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                    <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum soluta nihil est. Eum similique neque autem ut.</h4>
-                    <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui animi animi rerum.</p>
-                  </div>
-                </div><!-- End slide item -->
-
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <h3>Why Choose Our Service?</h3>
+            
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-tools" style="color: #ff8b2c;"></i>
+                  <span>Expert Technicians</span>
+                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Why Us Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-house-door" style="color: #5578ff;"></i>
+                  <span>Home Service in Dehradun</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-lightning" style="color: #e80368;"></i>
+                  <span>Quick & Reliable Solutions</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-cash-stack" style="color: #ffa76e;"></i>
+                  <span>Affordable Pricing</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-shield-check" style="color: #11dbcf;"></i>
+                  <span>Trusted & Secure Service</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-clock-history" style="color: #4233ff;"></i>
+                  <span>Same-Day Repairs</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-laptop" style="color: #29cc61;"></i>
+                  <span>Comprehensive Laptop & Computer Repair</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-people" style="color: #ff5828;"></i>
+                  <span>Customer Satisfaction Guaranteed</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->    
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-phone" style="color: #17a2b8;"></i>
+                  <span>24/7 Customer Support</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->              
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-patch-check" style="color: #f39c12;"></i>
+                  <span>Warranty on Repairs</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->              
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-gear" style="color: #9b59b6;"></i>
+                  <span>Genuine Spare Parts</span>
+                </div>
+              </div>
+              <!-- End Icon List Item-->
             </div>
           </div>
         </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
+      </div> 
+    </section> 
 
   </main>
 
   <footer id="footer" class="footer light-background">
-
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Nova</span>
+              <span class="sitename">NK Laptop Service Center</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>"NK Laptop Service Center – Your trusted destination for expert laptop and computer repairs in Dehradun. We offer fast, reliable, and affordable solutions, 
+              including home service. Customer satisfaction is our priority!".</p>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -373,15 +367,10 @@
 
     <div class="container copyright text-center">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Nova</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      <!-- <div class="credits">        
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      </div> -->
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
